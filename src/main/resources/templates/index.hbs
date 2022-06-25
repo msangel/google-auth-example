@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title>Example</title>
+</head>
+<body>
+{{#if logged}}
+
+  <p>Hello {{user}}</p>
+  <h1>{{foo}}</h1>
+  <form method="post" action="/logout">
+    <input type="submit" value="Logout">
+    <input type="hidden" name="_csrf" value="{{_csrf}}">
+  </form>
+{{else}}
+  <h3>Login with:</h3>
+  <a href="{{loginUrl}}">Google</a>
+{{/if}}
+{{#if files}}
+  files: {{{files}}}
+{{/if}}
+</body>
+</html>

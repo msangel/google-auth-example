@@ -1,0 +1,8 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+#            client-id: "deadbeef-dead-beef-dead-beef00000075.apps.googleusercontent.com"
+#            client-secret: "deadbeef-dead-beef-dead-beef00000075"
